@@ -130,7 +130,7 @@
         <figcaption class="figure-caption text-center">
             <h5><?=$prod_name[$c-1]?>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-heart-o"></i></a></h5>
             <h5>Price : <?=$prod_price[$c-1]?>&nbsp;&nbsp;</h5>
-          <h5>Price : <?=$prod_rating[$c-1]?>&nbsp;&nbsp;</h5>
+          <h5>Rating : <?=$prod_rating[$c-1]?>&nbsp;&nbsp;</h5>
             <!--<p></p>-->
           <a href="#" class="btn btn-dark mb-4 text-center" role="button">Buy</a>
           <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
