@@ -107,7 +107,8 @@
   
  
    <!--code from index.php card decks logic added-->
-   <p class="display-4 text-center">Categories</p>
+   <p class="display-4 text-center"><?=$cat_name;?></p>
+    <br>
     <?$c=1; $lim=$n/4+1; for($j=1;$j<=$lim;$j++){ ?>
     <div class="container">
   <div class="row p-2">
