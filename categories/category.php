@@ -119,8 +119,8 @@
       <figure class="figure">
         <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
         <figcaption class="figure-caption text-center">
-            <h5>Product&nbsp;&nbsp;<a href="#"><i class="fa fa-heart-o"></i></a></h5>
-            <p><?=$prod_name[$c-1]?></p>
+            <h5><?=$prod_name[$c-1]?>&nbsp;&nbsp;<a href="#"><i class="fa fa-heart-o"></i></a></h5>
+            <!--<p></p>-->
           <a href="#" class="btn btn-dark mb-4 text-center" role="button">Buy</a>
           <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
            </figcaption>
