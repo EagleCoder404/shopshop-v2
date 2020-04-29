@@ -115,6 +115,7 @@
     <? for($i=1;$i<=4;$i++){ ?> 
     <? if(4*($j-1)+$i>$n) break; ?>
    <div class="col-md-3">
+     <a href='product_description.php'>
       <figure class="figure">
         <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
         <figcaption class="figure-caption text-center">
@@ -124,6 +125,7 @@
           <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
            </figcaption>
       </figure>
+       </a>
     </div>
   <? $c++;} ?>
       </div> 
