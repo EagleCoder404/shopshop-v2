@@ -114,7 +114,7 @@
     foreach($pro as $p)
       $prod_id[]=$p['product_id'];
  
-    print_r($prod_id);
+    //print_r($prod_id);
     
   ?>
   
