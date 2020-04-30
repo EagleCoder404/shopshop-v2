@@ -128,7 +128,7 @@
     <? for($i=1;$i<=4;$i++){ ?> 
     <? if(4*($j-1)+$i>$n) break; ?>
    <div class="col-md-3">
-     <a href='product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>
+     <a href='product_description.php?product_id=<?=$prod_id[$c]?>&&product_name=<?=$prod_name[$c-1]?>'>
       <figure class="figure">
         <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
         <figcaption class="figure-caption text-center">
