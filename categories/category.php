@@ -112,7 +112,7 @@
     
     $prod_id=array();
     foreach($pro as $p)
-      $prod_id[]=$p['id'];
+      $prod_id[]=$p['product_id'];
  
     
   ?>
