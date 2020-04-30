@@ -84,7 +84,7 @@
   
 <div class="jumbotron">
   <div class="text-center">
-    <?=echo $product_id."<br>".$product_name;?>
+    <?=$product_id."<br>".$product_name;?>
   </div>
   </div
  
