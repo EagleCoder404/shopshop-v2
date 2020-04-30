@@ -144,7 +144,7 @@
             <h5>Price : <?=$prod_price[$c-1]?>&nbsp;&nbsp;</h5>
           <h5>Rating : <?=$prod_rating[$c-1]?>&nbsp;&nbsp;</h5>
             <!--<p></p>-->
-          <a href="../product/product_buy.php" class="btn btn-dark mb-4 text-center" role="button">Buy</a>
+          <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>
           <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
            </figcaption>
       </figure>
