@@ -93,12 +93,16 @@
   
     $prod_description=array();
     $prod_seller=array();
+   
   
-    //foreach($product as $p)
-    //{
-      // $prod_description=$p['description'];
-        //$prod_seller=$p['seller'];
-    //}
+    foreach($product as $p)
+    {
+       $prod_description=$p['description'];
+        $prod_seller=$p['seller'];
+    }
+   print_r($prod_description);
+    print_r($prod_seller);
+    echo "<br>";
    print_r($product);
     
   
