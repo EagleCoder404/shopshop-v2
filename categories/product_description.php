@@ -94,18 +94,18 @@
     $prod_description=array();
     $prod_seller=array();
   
-    foreach($product as $p)
-    {
-       $prod_description=$p['description'];
-        $prod_seller=$p['seller'];
-    }
+    //foreach($product as $p)
+    //{
+      // $prod_description=$p['description'];
+        //$prod_seller=$p['seller'];
+    //}
    print_r($product);
     
   
   ?>
 <div class="jumbotron">
   <div class="text-center">
-    <?=$product_id."<br>".$product_name."<br>".$prod_description[0]."<br>".$prod_seller[0];?>
+    <?=$product_id."<br>".$product_name."<br>".$product['description']."<br>".$product['seller'];?>
   </div>
   </div
  
