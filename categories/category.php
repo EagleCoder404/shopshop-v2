@@ -113,7 +113,14 @@
     $prod_id=array();
     foreach($pro as $p)
       $prod_id[]=$p['product_id'];
+    
+    $prod_description=array();
+    foreach($pro as $p)
+      $prod_description[]=$p['description'];
  
+    $prod_seller=array();
+    foreach($pro as $p)
+      $prod_seller[]=$p['seller'];
     //print_r($prod_id);
     
   ?>
