@@ -5,7 +5,7 @@
   $product_id=$_GET['product_id'];
   $product_name=$_GET['product_name'];
 
-  echo $product_id."<br>".$product_name;
+  //echo $product_id."<br>".$product_name;
 ?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
@@ -82,11 +82,11 @@
   
   
   
-<!--<div class="jumbotron">
+<div class="jumbotron">
   <div class="text-center">
-    <--?="cat_id : ".$cat_id."<br>"."cat_name : ".$cat_name?>
+    <?=echo $product_id."<br>".$product_name;?>
   </div>
-  </div>-->
+  </div
  
   
   
