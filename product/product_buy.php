@@ -109,7 +109,7 @@
   ?>
 <div class="jumbotron">
   <div class="text-center">
-    <h1 class="display-4">"Buy It</h1>
+    <h1 class="display-4">Buy It</h1>
     <?=$product_id."<br>".$product_name."<br>".$prod_description."<br>".$prod_seller;?>
   </div>
   </div
