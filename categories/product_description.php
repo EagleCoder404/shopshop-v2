@@ -1,6 +1,11 @@
 <?php
   session_start();
   include '../libraries/chocolates.php';
+
+  $product_id=$_GET['product_id'];
+  $product_name=$_GET['product_name'];
+
+  echo $product_id."<br>".$product_name;
 ?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
