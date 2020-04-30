@@ -93,12 +93,13 @@
   
     $prod_description=array();
     $prod_seller=array();
-   
+    $prod_price=array();
   
     foreach($product as $p)
     {
        $prod_description=$p['description'];
         $prod_seller=$p['seller'];
+        $prod_price=$p['product_price'];
     }
    //print_r($prod_description);
     //print_r($prod_seller);
@@ -109,7 +110,7 @@
   ?>
 <div class="jumbotron">
   <div class="text-center">
-    <?=$product_id."<br>".$product_name."<br>".$prod_description."<br>".$prod_seller;?>
+    <?=$product_id."<br>".$product_name."<br>".$prod_description."<br>".$prod_seller."<br>".$prod_price;?>
   </div>
   </div
  
