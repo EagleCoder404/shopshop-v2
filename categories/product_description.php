@@ -100,16 +100,16 @@
        $prod_description=$p['description'];
         $prod_seller=$p['seller'];
     }
-   print_r($prod_description);
-    print_r($prod_seller);
-    echo "<br>";
-   print_r($product);
+   `//print_r($prod_description);
+    //print_r($prod_seller);
+    //echo "<br>";
+   //print_r($product);
     
   
   ?>
 <div class="jumbotron">
   <div class="text-center">
-    <?=$product_id."<br>".$product_name."<br>".$product['description']."<br>".$product['seller'];?>
+    <?=$product_id."<br>".$product_name."<br>".$prod_description."<br>".$prod_seller;?>
   </div>
   </div
  
