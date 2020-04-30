@@ -81,7 +81,19 @@
 </div>
   
   
+  <?php
   
+    $con = getCon();
+    $res= $con->query("select * from products where product_id='$product_id' and product_name='$product_name'");
+  
+    $product = array();
+    while($ele = $res->fetch_assoc())
+      $product[]=$ele;
+      
+   print_r($product);
+    
+  
+  ?>
 <div class="jumbotron">
   <div class="text-center">
     <?=$product_id."<br>".$product_name;?>
