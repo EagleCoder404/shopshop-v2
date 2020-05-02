@@ -70,6 +70,17 @@
 </script>
 </head>
 <body>
+        
+
+<div class="jumbotron">
+        <div class="text-center">
+            <a href="admin_enter.php"><button type="button" class="btn btn-dark">Enter</button></a>
+        </div>
+    </div>        
+        
+        
+        
+        
 <div class="bs-example">
     <div class="accordion" id="accordionExample">
         <div class="card">
@@ -107,7 +118,3 @@
 </html>                            
     
      
-   
-
-
-<a href='admin_enter.php'>click me to go back</a>
