@@ -10,7 +10,7 @@
         
         
         //$con->query("insert into categories values('$cat_id','$cat_name')");
-        if (!empty($_POST['categories_submit'])) {
+        if (isset($_POST['categories_submit'])) {
                 $cat_id = $_POST['cat_id'];
         $cat_name = $_POST['cat_name'];
                 $con = getCon();
@@ -28,7 +28,7 @@
         $res = $con->query("select * from sub_categories");
         while($ele = $res->fetch_assoc())
             $sub_category[]=$ele;*/
-        if (!empty($_POST['sub_categories_submit'])) {
+        if (isset($_POST['sub_categories_submit'])) {
                 $con = getCon();
                 $sub_cat_id = $_POST['sub_cat_id'];
         $sub_cat_name = $_POST['sub_cat_name'];
