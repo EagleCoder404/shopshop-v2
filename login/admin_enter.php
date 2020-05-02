@@ -93,7 +93,7 @@
     <form class="jumbotron m-4" method="POST" action="admin_verify.php">
      <div class="form-group">
         <label for="inputcat_id">category id</label>
-        <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id" required>
+        <input type="number" min="0" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id" required>
     </div>
     <div class="form-group">
         <label for="inputcat_name">category name</label>
@@ -108,7 +108,7 @@
      <form class="jumbotron m-4" method="POST" action="admin_verify.php">
      <div class="form-group">
         <label for="inputsub_cat_id">Sub category id</label>
-        <input type="text" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name="sub_cat_id" required>
+        <input type="number" min="0" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name="sub_cat_id" required>
     </div>
     <div class="form-group">
         <label for="inputsub_cat_name">Sub category name</label>
@@ -116,7 +116,7 @@
     </div>
     <div class="form-group">
         <label for="inputcat_id">category id</label>
-        <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name=cat_id" required>
+        <input type="text"type="number" min="0" class="form-control" id="inputcat_id" placeholder="categoryid" name=cat_id" required>
     </div>
     
     <button type="submit" class="btn btn-dark">Sure!</button>
