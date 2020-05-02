@@ -7,9 +7,20 @@
         while($ele = $res->fetch_assoc())
             $category[]=$ele;
         
-        $category_id = $_POST['cat_id'];
-        $category_name = $_POST['cat_name'];
-        $con->query("insert into categories values('$category_id','$category_name')");
+        $cat_id = $_POST['cat_id'];
+        $cat_name = $_POST['cat_name'];
+        $con->query("insert into categories values('$cat_id','$cat_name')");
+        
+
+
+        $sub_category=Array();
+        $res = $con->query("select * from sub_categories");
+        while($ele = $res->fetch_assoc())
+            $sub_category[]=$ele;
+        
+        $sub_cat_id = $_POST['sub_cat_id'];
+        $sub_cat_name = $_POST['sub_cat_name'];
+        $con->query("insert into categories values('$sub_cat_id','$sub_cat_name')");
         
         
 ?>
@@ -81,18 +92,20 @@
                 </div>
             </div>
         </div>
-        <!--<div class="card">
+        <div class="card">
             <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> What is Bootstrap?</button>
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>sub categories</button>
                 </h2>
             </div>
             <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                   <? foreach($sub_category as $cat) { ?>
+                        <p><?=$cat['sub_cat_id']."=>".$cat['sub_cat_name']."=>".$cat['cat_id']?></p>
+                        <? } ?>
                 </div>
             </div>
-        </div>-->
+        </div>
         
     </div>
 </div>
