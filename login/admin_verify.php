@@ -31,4 +31,4 @@
   </div>
 
 
-<a href='admin.enter.php'>click me to go back</a>
+<a href='admin_enter.php'>click me to go back</a>
