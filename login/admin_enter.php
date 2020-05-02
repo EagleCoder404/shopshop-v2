@@ -116,7 +116,7 @@
     </div>
     <div class="form-group">
         <label for="inputcat_id">category id</label>
-        <input type="number" min="1" class="form-control" id="inputcat_id" placeholder="categoryid" name=cat_id" required>
+        <input type="number" min="1" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id" required>
     </div>
     
     <button type="submit" class="btn btn-dark">Sure!</button>
