@@ -105,7 +105,7 @@
     <div class="jumbotron">
         <div class="text-center">
             <? foreach($category as $cat) { ?>
-            <p><?=$cat['cat_id']."     ".$cat['cat_name']."<br>"?></p>
+            <p><?=$cat['cat_id']."=>".$cat['cat_name']." | "?></p>
             <? } ?>
         </div>
     </div>
@@ -123,11 +123,31 @@
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
     </div>-->
     <button type="submit" class="btn btn-dark">Sure!</button>
-    <button type="submit" class="btn btn-dark">Show data</button>
     </form>
     
             
-                                              
+      <?php
+        //$cat = $_POST['cat'];
+        $category=Array();
+        $con = getCon();
+        $res = $con->query("select * from sub_categories");
+        while($ele = $res->fetch_assoc())
+            $category[]=$ele;
+        
+        $sub_cat_id = $_POST['sub_cat_id'];
+        $sub_cat_name = $_POST['sub_cat_name'];
+        $cat_id = $_POST['cat_id'];
+        $con->query("insert into categories values('$sub_cat_id','$sub_cat_name','$cat_id')");
+        
+        
+    ?>
+    <div class="jumbotron">
+        <div class="text-center">
+            <? foreach($category as $cat) { ?>
+            <p><?=$cat['sub_cat_id']."=>".$cat['sub_cat_name']." | "?></p>
+            <? } ?>
+        </div>
+    </div>                                        
      <!--Sub_categories-->                                         
      <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
