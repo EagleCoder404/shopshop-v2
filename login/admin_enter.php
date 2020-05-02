@@ -72,11 +72,24 @@
         </div>
     </div>
     
+    
+    
+    <!--Show me Data-->
+    <form class="jumbotron m-4" method="POST" action="admin_verify.php">
+     <div class="form-group">
+        <label for="inputtable">Show me data of table entered</label>
+        <input type="text" class="form-control" id="inputtable" placeholder="tablename" name="table">
+    </div>
+    <button type="submit" class="btn btn-dark">Sure!</button>
+    </form>
+    
+ 
+    
     <!--categories-->
     <form class="jumbotron m-4" method="POST" action="admin_verify.php">
      <div class="form-group">
         <label for="inputcat_id">category id</label>
-        <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name=cat_id">
+        <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id">
     </div>
     <div class="form-group">
         <label for="inputcat_name">category name</label>
@@ -94,7 +107,7 @@
      <form class="jumbotron m-4" method="POST" action="admin_verify.php">
      <div class="form-group">
         <label for="inputsub_cat_id">Sub category id</label>
-        <input type="text" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name=sub_cat_id">
+        <input type="text" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name="sub_cat_id">
     </div>
     <div class="form-group">
         <label for="inputsub_cat_name">Sub category name</label>
