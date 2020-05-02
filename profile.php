@@ -73,6 +73,8 @@
                             header("Location:login/admin_enter.php");
                             die();
                         }
+                        else
+                            echo "fuck off bitch";
                     }
                     else if(isset($_SESSION['user_name'])){ 
                         echo '<h1 class="display-4"> username : '.$_SESSION['user_name'].'</h1>';
