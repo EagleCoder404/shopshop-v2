@@ -93,11 +93,11 @@
     <form class="jumbotron m-4" method="POST" action="admin_verify.php">
      <div class="form-group">
         <label for="inputcat_id">category id</label>
-        <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id">
+        <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id" required>
     </div>
     <div class="form-group">
         <label for="inputcat_name">category name</label>
-        <input type="text" class="form-control" id="inputcat_name" placeholder="categoryname" name="cat_name">
+        <input type="text" class="form-control" id="inputcat_name" placeholder="categoryname" name="cat_name" required>
     </div>
     <!--<div class="form-group">
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
