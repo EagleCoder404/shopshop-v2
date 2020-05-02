@@ -1,7 +1,12 @@
 <?php
 
     session_start();
-     
+    include '../libraries/chocolates.php';
+
+    $table= $_POST['table'];
+    echo $table;
+
+
 ?>
 
 <!--HTML boiler plate-->
@@ -68,14 +73,16 @@
   <!--Enter data into categories-->
     <div class="jumbotron">
         <div class="text-center">
-            <h1 class="display-4">You are the admin</h1>
+            <h1 class="display-5">You are the admin</h1>
+            <h1 class="display-6">data</h1>
+            <p></p>
         </div>
     </div>
     
     
     
     <!--Show me Data-->
-    <form class="jumbotron m-4" method="POST" action="admin_verify.php">
+    <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
         <label for="inputtable">Show me data of table entered</label>
         <input type="text" class="form-control" id="inputtable" placeholder="tablename" name="table">
@@ -86,7 +93,7 @@
  
     
     <!--categories-->
-    <form class="jumbotron m-4" method="POST" action="admin_verify.php">
+    <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
         <label for="inputcat_id">category id</label>
         <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id">
@@ -104,7 +111,7 @@
             
                                               
      <!--Sub_categories-->                                         
-     <form class="jumbotron m-4" method="POST" action="admin_verify.php">
+     <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
         <label for="inputsub_cat_id">Sub category id</label>
         <input type="text" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name="sub_cat_id">
