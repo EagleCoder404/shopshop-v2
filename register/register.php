@@ -69,11 +69,11 @@
         <label for="inputEmail">Email</label>
         <input type="email" class="form-control" id="inputEmail" placeholder="email" name="email">
     </div>
-    <div class="form-group">
+    <!--<div class="form-group">
         <label for="inputname">Email</label>
         <input type="text" class="form-control" id="inputName" placeholder="name" name="name">
     </div>
-    <!--<div class="form-group">
+    <div class="form-group">
         <label for="inputCity">city</label>
         <input type="text" class="form-control" id="inputCity" placeholder="city" name="city">
     </div>
