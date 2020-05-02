@@ -70,7 +70,7 @@
         <div class="text-center">
             <?php if(isset($_SESSION['user_name'])){
                         if($_SESSION['user_name']=="root"){
-                            header("Location:login/admin.php");
+                            header("Location:login/admin_enter.php");
                             die();
                         }
                     }
