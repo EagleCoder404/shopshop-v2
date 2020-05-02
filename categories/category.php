@@ -88,75 +88,8 @@
  
   
   
-  <?php
-    $con = getCon();
-    $res = $con->query("select * from products where cat_id = '$cat_id'");
-    
-    $pro = Array();
-    while($ele = $res->fetch_assoc())
-      $pro[]=$ele;
-    
-    $prod_name=array();
-    foreach($pro as $p)
-      $prod_name[]=$p['product_name'];
  
-    $n=count($prod_name);
-    
-    $prod_price=array();
-    foreach($pro as $p)
-      $prod_price[]=$p['product_price'];
-    
-    $prod_rating=array();
-    foreach($pro as $p)
-      $prod_rating[]=$p['product_rating'];
-    
-    $prod_id=array();
-    foreach($pro as $p)
-      $prod_id[]=$p['product_id'];
-    
-    $prod_description=array();
-    foreach($pro as $p)
-      $prod_description[]=$p['description'];
  
-    $prod_seller=array();
-    foreach($pro as $p)
-      $prod_seller[]=$p['seller'];
-    //print_r($prod_id);
-    
-  ?>
-  
-  
- 
-   <!--code from index.php card decks logic added-->
-   <p class="display-4 text-center"><?=$cat_name;?></p>
-    <br>
-    <?$c=1; $lim=$n/4+1; for($j=1;$j<=$lim;$j++){ ?>
-    <div class="container">
-  <div class="row p-2">
-    <? for($i=1;$i<=4;$i++){ ?> 
-    <? if(4*($j-1)+$i>$n) break; ?>
-   <div class="col-md-3">
-     <!--<a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>-->
-      <figure class="figure">
-        <a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>
-          <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
-        </a>
-        <figcaption class="figure-caption text-center">
-          <h5><?=$prod_name[$c-1]?>    <?php if(isset($_SESSION['user_name'])) {
-                  echo '<a href="#"><i class="fa fa-heart-o"></i></a></h5>';  }?>
-            <h5>Price : <?=$prod_price[$c-1]?>&nbsp;&nbsp;</h5>
-          <h5>Rating : <?=$prod_rating[$c-1]?>&nbsp;&nbsp;</h5>
-            <!--<p></p>-->
-          <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>
-          <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
-           </figcaption>
-      </figure>
-       <!--</a>-->
-    </div>
-  <? $c++;} ?>
-      </div> 
-     </div>
-    <? } ?>
 
   
   
