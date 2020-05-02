@@ -104,7 +104,9 @@
     ?>
     <div class="jumbotron">
         <div class="text-center">
-            <p><?=$category['cat_id']."     ".$category['cat_name']."<br>"?></p>
+            <? foreach($category as $cat) { ?>
+            <p><?=$cat['cat_id']."     ".$cat['cat_name']."<br>"?></p>
+            <? } ?>
         </div>
     </div>
     <!--categories-->
