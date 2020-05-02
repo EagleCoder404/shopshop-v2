@@ -97,7 +97,7 @@
         <label for="inputcat_name">category name</label>
         <input type="text" class="form-control" id="inputcat_name" placeholder="categoryname" name="cat_name" required>
     </div>
-    <button type="submit" class="btn btn-dark">Sure!</button>
+    <button type="submit" name="categories_submit" class="btn btn-dark">Sure!</button>
     </form>
     
             
@@ -117,7 +117,7 @@
         <input type="number" min="1" class="form-control" id="inputcat_id" placeholder="categoryid" name="s_cat_id" required>
     </div>
     
-    <button type="submit" class="btn btn-dark">Sure!</button>
+    <button type="submit" name="sub_categories_submit" class="btn btn-dark">Sure!</button>
     </form>                                        
                                               
     
