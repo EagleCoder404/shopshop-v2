@@ -68,13 +68,11 @@
     
     
   <!--Enter data into categories-->
-    <!--<div class="jumbotron">
+    <div class="jumbotron">
         <div class="text-center">
-            <h1 class="display-5">You are the admin</h1>
-            <h1 class="display-6">data</h1>
-            <p></p>
+            <a href="admin_display.php"><button type="button" class="btn btn-dark">Display</button></a>
         </div>
-    </div>-->
+    </div>
     
     
     
