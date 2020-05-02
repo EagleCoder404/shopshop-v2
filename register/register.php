@@ -62,7 +62,7 @@
  <!--Regsiter form-->   
   <form method="POST" action="register_details.php" class="jumbotron m-4">
      <div class="form-group">
-        <label for="inputEmail">Username</label>
+        <label for="inputuser">Username</label>
         <input type="text" class="form-control" id="inputuser_name" placeholder="username" name="user_name">
     </div>
     <div class="form-group">
@@ -70,6 +70,10 @@
         <input type="email" class="form-control" id="inputEmail" placeholder="email" name="email">
     </div>
     <div class="form-group">
+        <label for="inputname">Email</label>
+        <input type="text" class="form-control" id="inputName" placeholder="name" name="name">
+    </div>
+    <!--<div class="form-group">
         <label for="inputCity">city</label>
         <input type="text" class="form-control" id="inputCity" placeholder="city" name="city">
     </div>
@@ -80,7 +84,7 @@
     <div class="form-group">
         <label for="inputCountry">Country</label>
         <input type="text" class="form-control" id="inputCountry" placeholder="country" name="country">
-    </div>
+    </div>-->
     <div class="form-group">
         <label for="inputPassword">Password</label>
         <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
