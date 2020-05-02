@@ -102,13 +102,20 @@
         
         
     ?>
-    <div class="jumbotron">
-        <div class="text-center">
-            <? foreach($category as $cat) { ?>
-            <p><?=$cat['cat_id']."=>".$cat['cat_name']." | "?></p>
-            <? } ?>
-        </div>
+    <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">categories</a>
+      </h4>
     </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <? foreach($category as $cat) { ?>
+            <p><?=$cat['cat_id']."=>".$cat['cat_name']?></p>
+            <? } ?>
+    </div>
+  </div>
+  </div>
     <!--categories-->
     <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
