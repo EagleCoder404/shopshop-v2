@@ -3,10 +3,7 @@
     session_start();
     include '../libraries/chocolates.php';
 
-    $table= $_POST['table'];
-    echo $table;
-
-
+   
 ?>
 
 <!--HTML boiler plate-->
@@ -71,13 +68,13 @@
     
     
   <!--Enter data into categories-->
-    <div class="jumbotron">
+    <!--<div class="jumbotron">
         <div class="text-center">
             <h1 class="display-5">You are the admin</h1>
             <h1 class="display-6">data</h1>
             <p></p>
         </div>
-    </div>
+    </div>-->
     
     
     
@@ -91,7 +88,25 @@
     </form>
     
  
-    
+    <?php
+        $cat = $_POST['cat'];
+        $category=Array();
+        $con = getCon();
+        $res = $con->query("select * from '$cat'");
+        while($ele = $res->fetch_assoc())
+            $category[]=$ele;
+        
+        $cat_id = $_POST['cat_id'];
+        $cat_name = $_POST['cat_name'];
+        $con->query("insert into categories values('$cat_id','$cat_name')");
+        
+        
+    ?>
+    <div class="jumbotron">
+        <div class="text-center">
+            <p><?=$category['cat_id']."     ".$category['cat_name']."<br>".?></p>
+        </div>
+    </div>
     <!--categories-->
     <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
@@ -106,6 +121,7 @@
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
     </div>-->
     <button type="submit" class="btn btn-dark">Sure!</button>
+    <button type="submit" class="btn btn-dark" name="cat">Show data</button>
     </form>
     
             
