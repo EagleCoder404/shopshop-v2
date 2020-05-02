@@ -89,10 +89,10 @@
     
  
     <?php
-        $cat = $_POST['cat'];
+        //$cat = $_POST['cat'];
         $category=Array();
         $con = getCon();
-        $res = $con->query("select * from '$cat'");
+        $res = $con->query("select * from categories");
         while($ele = $res->fetch_assoc())
             $category[]=$ele;
         
@@ -121,7 +121,7 @@
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
     </div>-->
     <button type="submit" class="btn btn-dark">Sure!</button>
-    <button type="submit" class="btn btn-dark" name="cat">Show data</button>
+    <button type="submit" class="btn btn-dark">Show data</button>
     </form>
     
             
