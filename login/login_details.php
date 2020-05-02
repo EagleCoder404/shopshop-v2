@@ -7,6 +7,7 @@
   $user_name = $_POST['user_name'];
   $password = $_POST['password'];
 
+
 function check_password($user_name,$password)
 {
     
@@ -33,9 +34,16 @@ function check_password($user_name,$password)
 if(rowExists('user','user_name',$user_name)){
     if(check_password($user_name,$password)){
         //echo "Yes";
+        if(isset($_SESSION('root')))
+        {
+          header("Location:admin.php");
+          die();
+        }
+      else{
         $_SESSION['user_name']=$user_name;
         header("Location:../index.php");
         die();
+      }
     }
     else{
         echo "no2 [password wrong]";
