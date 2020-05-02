@@ -27,9 +27,10 @@
         
         $sub_cat_id = $_POST['sub_cat_id'];
         $sub_cat_name = $_POST['sub_cat_name'];
+        $cat_id = $_POST['s_cat_id'];
         //$con->query("insert into categories values('$sub_cat_id','$sub_cat_name')");
         
-        if(($con->query("insert into sub_categories(sub_cat_id,sub_cat_name,cat_id) values('$sub_cat_id','$sub_cat_name','$cat_id')"))===True){
+        if(($con->query("insert into sub_categories(sub_cat_id,sub_cat_name,cat_id) values('$sub_cat_id','$sub_cat_name','$s_cat_id')"))===True){
                 //echo "YES";
                 header("Location:admin_display.php");
                 die();
