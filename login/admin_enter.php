@@ -79,13 +79,13 @@
     
     
     <!--Show me Data-->
-    <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <!--<form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
      <div class="form-group">
         <label for="inputtable">Show me data of table entered</label>
         <input type="text" class="form-control" id="inputtable" placeholder="tablename" name="table">
     </div>
     <button type="submit" class="btn btn-dark">Sure!</button>
-    </form>
+    </form>-->
     
  
     <?php
@@ -104,7 +104,7 @@
     ?>
     <div class="jumbotron">
         <div class="text-center">
-            <p><?=$category['cat_id']."     ".$category['cat_name']."<br>".?></p>
+            <p><?=$category['cat_id']."     ".$category['cat_name']."<br>"?></p>
         </div>
     </div>
     <!--categories-->
