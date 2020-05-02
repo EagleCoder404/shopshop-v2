@@ -39,3 +39,4 @@
                 echo $con->error;
         
 ?>
+<a href="admin_display.php">something is wrong let me go back</a>
