@@ -79,7 +79,7 @@
     
     
     <!--Show me Data-->
-    <!--<form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <!--<form class="jumbotron m-4" method="POST" action="">
      <div class="form-group">
         <label for="inputtable">Show me data of table entered</label>
         <input type="text" class="form-control" id="inputtable" placeholder="tablename" name="table">
@@ -88,36 +88,9 @@
     </form>-->
     
  
-    <?php
-        //$cat = $_POST['cat'];
-        $category=Array();
-        $con = getCon();
-        $res = $con->query("select * from categories");
-        while($ele = $res->fetch_assoc())
-            $category[]=$ele;
-        
-        $category_id = $_POST['cat_id'];
-        $category_name = $_POST['cat_name'];
-        $con->query("insert into categories values('$category_id','$category_name')");
-        
-        
-    ?>
-    <div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">categories</a>
-      </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse in">
-      <? foreach($category as $cat) { ?>
-            <p><?=$cat['cat_id']."=>".$cat['cat_name']?></p>
-            <? } ?>
-    </div>
-  </div>
-  </div>
+    
     <!--categories-->
-    <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form class="jumbotron m-4" method="POST" action="admin_verify.php">
      <div class="form-group">
         <label for="inputcat_id">category id</label>
         <input type="text" class="form-control" id="inputcat_id" placeholder="categoryid" name="cat_id">
@@ -133,30 +106,9 @@
     </form>
     
             
-      <?php
-        //$cat = $_POST['cat'];
-        $category=Array();
-        $con = getCon();
-        $res = $con->query("select * from sub_categories");
-        while($ele = $res->fetch_assoc())
-            $category[]=$ele;
-        
-        $sub_cat_id = $_POST['sub_cat_id'];
-        $sub_cat_name = $_POST['sub_cat_name'];
-        $cat_id = $_POST['cat_id'];
-        $con->query("insert into categories values('$sub_cat_id','$sub_cat_name','$cat_id')");
-        
-        
-    ?>
-    <div class="jumbotron">
-        <div class="text-center">
-            <? foreach($category as $cat) { ?>
-            <p><?=$cat['sub_cat_id']."=>".$cat['sub_cat_name']." | "?></p>
-            <? } ?>
-        </div>
-    </div>                                        
+                                             
      <!--Sub_categories-->                                         
-     <form class="jumbotron m-4" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+     <!--<form class="jumbotron m-4" method="POST" action="">
      <div class="form-group">
         <label for="inputsub_cat_id">Sub category id</label>
         <input type="text" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name="sub_cat_id">
@@ -171,9 +123,9 @@
     </div>
     <!--<div class="form-group">
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
-    </div>-->
+    </div>
     <button type="submit" class="btn btn-dark">Sure!</button>
-    </form>                                         
+    </form> -->                                        
                                               
     
                                               
