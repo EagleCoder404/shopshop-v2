@@ -29,3 +29,6 @@
     </div>
   </div>
   </div>
+
+
+<a href='admin.enter.php'>click me to go back</a>
