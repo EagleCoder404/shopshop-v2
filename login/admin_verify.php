@@ -1,6 +1,7 @@
 <?php
         session_start();
         include '../libraries/chocolates.php';
+        $con = getCon();
         /*$category=Array();
         $con = getCon();
         $res = $con->query("select * from categories");
