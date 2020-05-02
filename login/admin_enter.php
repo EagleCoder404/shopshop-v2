@@ -96,9 +96,9 @@
         while($ele = $res->fetch_assoc())
             $category[]=$ele;
         
-        $cat_id = $_POST['cat_id'];
-        $cat_name = $_POST['cat_name'];
-        $con->query("insert into categories values('$cat_id','$cat_name')");
+        $category_id = $_POST['cat_id'];
+        $category_name = $_POST['cat_name'];
+        $con->query("insert into categories values('$category_id','$category_name')");
         
         
     ?>
