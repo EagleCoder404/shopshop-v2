@@ -121,6 +121,38 @@
     </form>                                        
                                               
     
+    
+    
+    <!--products-->
+    <form class="jumbotron m-4" method="POST" action="admin_verify.php">
+     <div class="form-group">
+        <label for="inputproduct_id">product id</label>
+        <input type="number" min="1" class="form-control" id="inputproduct_id" placeholder="product id" name="product_id" required>
+    </div>
+    <div class="form-group">
+        <label for="inputproduct_name">product name</label>
+        <input type="text" class="form-control" id="inputproduct_name" placeholder="product name" name="product_name" required>
+    </div>
+    <div class="form-group">
+        <label for="inputsub_cat_id">Sub category id</label>
+        <input type="number" min="1" class="form-control" id="inputsub_cat_id" placeholder="subcategoryid" name="sub_cat_id" required>
+    </div>
+    <div class="form-group">
+        <label for="inputproduct_brand">product brand</label>
+        <input type="text" class="form-control" id="inputproduct_brand" placeholder="product brand" name="product_brand" required>
+    </div>
+    <div class="form-group">
+        <label for="inputproduct_description">product description</label>
+        <input type="text" class="form-control" id="inputproduct_description" placeholder="product description" name="product_description" required>
+    </div>
+    <div class="form-group">
+        <label for="inputproduct_rating">product rating</label>
+        <input type="number" min="1" class="form-control" id="inputproduct_rating" placeholder="product rating" name="product_rating" required>
+    </div>
+    <button type="submit" name="products" class="btn btn-dark">Sure!</button>
+    </form>   
+    
+    
                                               
                                               
                                               
