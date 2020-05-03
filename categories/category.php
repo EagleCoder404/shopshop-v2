@@ -87,11 +87,50 @@
   </div>
  
   
+  <?php
   
+    $con = getCon();
+    
+    $res = $con->query("select * from sub_categories where cat_id = '$cat_id'");
+    
+    $sub = Array();
+    while($ele = $res->fetch_assoc())
+      $sub[]=$ele;
+    
+    $sub_name= array();
+    foreach($sub as $s)
+      $sub_name[]=$s['sub_cat_name'];
+      
+    
+  ?>
  
  
 
-  
+  <p class="display-4 text-center"><?=$cat_name;?></p>
+    <br>
+    <?$c=1; $lim=$n/4+1; for($j=1;$j<=$lim;$j++){ ?>
+    <div class="container">
+  <div class="row p-2">
+    <? for($i=1;$i<=4;$i++){ ?> 
+    <? if(4*($j-1)+$i>$n) break; ?>
+   <div class="col-md-3">
+     <!--<a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>-->
+      <figure class="figure">
+        <a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>
+          <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
+        </a>
+        <figcaption class="figure-caption text-center">
+          <h5><?=$sub_name[$c-1]?></h5>   
+          <!--<a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Explore</a>-->
+          <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
+           </figcaption>
+      </figure>
+       <!--</a>-->
+    </div>
+  <? $c++;} ?>
+      </div> 
+     </div>
+    <? } ?>
   
   
     
