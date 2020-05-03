@@ -85,8 +85,8 @@ else{
 //checking for seller credentials
 if(isset($_POST['login_seller']))
 {
-     $user_name = $_POST['seller_user_name'];
-    $password = $_POST['seller_password'];
+     $seller_user_name = $_POST['seller_user_name'];
+    $seller_password = $_POST['seller_password'];
   
     if(rowExists('seller','seller_user_name',$seller_user_name)){
     if(check_passwords($seller_user_name,$seller_password)){
