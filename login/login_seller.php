@@ -65,11 +65,11 @@
   <form class="jumbotron m-4" method="POST" action="login_details.php">
      <div class="form-group">
         <label for="inputEmail">Username</label>
-        <input type="text" class="form-control" id="inputuser_name" placeholder="username" name="user_name">
+        <input type="text" class="form-control" id="inputuser_name" placeholder="username" name="seller_user_name">
     </div>
     <div class="form-group">
         <label for="inputPassword">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="seller_password">
     </div>
     <!--<div class="form-group">
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
