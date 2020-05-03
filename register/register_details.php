@@ -40,7 +40,7 @@
   /*$city = $_POST['city'];
   $state = $_POST['state'];
   $country = $_POST['country'];*/
-  $s_p = password_hash($p,PASSWORD_DEFAULT);
+  $s_p = password_hash($s_p,PASSWORD_DEFAULT);
 
 
   //checking if query is valid if yes then yes else respective error will be displayed
