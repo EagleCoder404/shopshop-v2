@@ -4,6 +4,7 @@
   //including for calling useful functions 
   include '../libraries/chocolates.php';
 
+//check for user
 function check_passwordu($user_name,$password)
 {
     
@@ -26,12 +27,15 @@ function check_passwordu($user_name,$password)
   }
 }
 
+
+
+//check for seller
 function check_passwords($user_name,$password)
 {
     
   $con = getCon();
     
-  $user = $con->query("select * from user where seller_user_name='$user_name';");
+  $user = $con->query("select * from seller where seller_user_name='$user_name';");
   $res = $user->fetch_assoc();
   
   echo var_dump($res)."<br>";
@@ -48,6 +52,9 @@ function check_passwords($user_name,$password)
   }
 }
 
+
+
+//checking if user credentials
 if(isset($_POST['login_user']))
 {
    $user_name = $_POST['user_name'];
@@ -72,6 +79,10 @@ else{
 }
 }
 
+
+
+
+//checking for seller credentials
 if(isset($_POST['login_seller']))
 {
      $user_name = $_POST['seller_user_name'];
