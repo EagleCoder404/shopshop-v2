@@ -92,7 +92,7 @@
     <!--<div class="form-group">
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
     </div>-->
-    <button type="submit" class="btn btn-dark">Register</button>
+    <button type="submit" name="register_user" class="btn btn-dark">Register</button>
 </form>
     
     
