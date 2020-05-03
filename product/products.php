@@ -89,6 +89,7 @@
   
   
   <?php
+  
     $con = getCon();
     $res = $con->query("select * from products where sub_cat_id = '$sub_cat_id'");
     
@@ -105,13 +106,13 @@
     foreach($pro as $p)
       $prod_name[]=$p['product_name'];
     
-   /* $prod_price=array();
+    $prod_price=array();
     foreach($pro as $p)
-      $prod_price[]=$p['product_price'];*/
+      $prod_price[]=$p['product_price'];
     
     $prod_rating=array();
     foreach($pro as $p)
-      $prod_rating[]=$p['product_rating'];
+      $prod_rating[]=$p['rating'];
     
     $prod_description=array();
     foreach($pro as $p)
