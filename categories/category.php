@@ -100,6 +100,8 @@
     $sub_name= array();
     foreach($sub as $s)
       $sub_name[]=$s['sub_cat_name'];
+    
+    print_r($sub_name);
       
     
   ?>
