@@ -101,7 +101,7 @@
     foreach($sub as $s)
       $sub_name[]=$s['sub_cat_name'];
     
-    print_r($sub_name);
+    //print_r($sub_name);
       
     $n = count($sub_name);
   ?>
