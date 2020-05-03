@@ -156,7 +156,7 @@
    <div class="card m-4">
      <figure class="figure">
        <img src="black.png" class="figure-img img-fluid rounded" alt="image">
-       <figcaption class="figure-caption text-center"><a href='categories/category.php?cat_id=<?=$c;?>&&cat_name=<?=$got[$c-1];?>' class="stretched-link">/*category : <?=$c;?> : */<h5><?=$got[$c-1];?></h5></a></figcaption>
+       <figcaption class="figure-caption text-center"><a href='categories/category.php?cat_id=<?=$c;?>&&cat_name=<?=$got[$c-1];?>' class="stretched-link"><h5><?=$got[$c-1];?></h5></a></figcaption>
      </figure>
    </div> 
   <? $c++;} ?>
