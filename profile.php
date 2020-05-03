@@ -87,7 +87,7 @@
     </div>
     
     <div class="text-center">
-    <a href="register_seller.php"><button type="button" class="btn btn-dark">Become a seller</button></a>
+    <a href="register/register_seller.php"><button type="button" class="btn btn-dark">Become a seller</button></a>
     </div>
     
     </body>
