@@ -39,11 +39,11 @@
             <a href="../about.php" class="nav-item nav-link">About</a>
             <a href="#" class="nav-item nav-link">Products</a>
         </div>
-        <div class="navbar-nav ml-auto">
+        <!--<div class="navbar-nav ml-auto">
             <a href="#" class="nav-item nav-link active">Register</a>
             <a href="../login/login.php" class="nav-item nav-link">Login</a>&nbsp;&nbsp;
             <!--<a href="#" class="nav-item nav-link active"><i class="fa fa-user-o"></i></a>-->
-        </div>
+        </div>-->
         <!--<form class="form-inline">
             <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="search">
             <button type="submit" class="btn btn-light my-sm-0">Search</button>
@@ -92,7 +92,7 @@
     <!--<div class="form-group">
         <label class="form-check-label"><input type="checkbox"> Remember me</label>
     </div>-->
-    <button type="submit" class="btn btn-dark">Register</button>
+    <button type="submit" name="register_seller" class="btn btn-dark">Register</button>
 </form>
     
     
