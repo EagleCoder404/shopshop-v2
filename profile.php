@@ -86,9 +86,9 @@
         </div>
     </div>
     
-    
-    
-    
+    <div class="text-center">
+    <a href="register_seller.php"><button type="button" class="btn btn-dark">Become a seller</button></a>
+    </div>
     
     </body>
 </html>
