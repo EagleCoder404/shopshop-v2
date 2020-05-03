@@ -97,13 +97,18 @@
     while($ele = $res->fetch_assoc())
       $sub[]=$ele;
     
+    $sub_id= array();
+    foreach($sub as $s)
+      $sub_id[]=$s['sub_cat_id'];
+    
+    $n = count($sub_id);
+    
     $sub_name= array();
     foreach($sub as $s)
       $sub_name[]=$s['sub_cat_name'];
     
     //print_r($sub_name);
-      
-    $n = count($sub_name);
+     
   ?>
  
  
@@ -116,9 +121,9 @@
     <? for($i=1;$i<=4;$i++){ ?> 
     <? if(4*($j-1)+$i>$n) break; ?>
    <div class="col-md-3">
-     <!--<a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>-->
+     <!--<a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$sub_name[$c-1]?>'>-->
       <figure class="figure">
-        <a href='../product/products.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>
+        <a href='../product/products.php?sub_cat_id=<?=$sub_id[$c-1]?>&&sub_cat_name=<?=$prod_name[$c-1]?>'>
           <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
         </a>
         <figcaption class="figure-caption text-center">
