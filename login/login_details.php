@@ -40,7 +40,7 @@ function check_passwords($user_name,$password)
   
   echo var_dump($res)."<br>";
   
-  $password_hash=$res['password'];
+  $password_hash=$res['seller_password'];
     
   if(password_verify($password,$password_hash)){
     echo "password verified<br>";
