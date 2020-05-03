@@ -1,8 +1,8 @@
 <?php
   session_start();
   include '../libraries/chocolates.php';
-  $cat_id = $_GET['cat_id']; 
-  $cat_name = $_GET['cat_name']; 
+  $sub_cat_id = $_GET['sub_cat_id']; 
+  $sub_cat_name = $_GET['sub_cat_name']; 
 ?>
 
 <!--HTML boiler plate-->
@@ -90,7 +90,7 @@
   
   <?php
     $con = getCon();
-    $res = $con->query("select * from products where sub_cat_id = '$cat_id'");
+    $res = $con->query("select * from products where sub_cat_id = '$sub_cat_id'");
     
     $pro = Array();
     while($ele = $res->fetch_assoc())
