@@ -68,11 +68,11 @@
   <!--profile-->
     <div class="jumbotron">
         <div class="text-center">
-            <?php if(isset($_SESSION['user_name'])){
-                        if($_SESSION['user_name']=="root"){
+            <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+                        //if($_SESSION['user_name']=="root"){
                             header("Location:login/admin_enter.php");
                             die();
-                        }
+                        //}
                     }
                     else if(isset($_SESSION['user_name'])){ 
                         echo '<h1 class="display-4"> username : '.$_SESSION['user_name'].'</h1>';
