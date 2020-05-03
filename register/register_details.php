@@ -18,7 +18,7 @@
 
 
   //checking if query is valid if yes then yes else respective error will be displayed
-  if(($con->query("insert into user(user_name,email,seller_password) values('$u','$e','$p');"))===True){
+  if(($con->query("insert into user(user_name,email,password) values('$u','$e','$p');"))===True){
      //echo "YES";
       header("Location:../login/login_seller.php");
       die();
@@ -44,7 +44,7 @@
 
 
   //checking if query is valid if yes then yes else respective error will be displayed
-  if(($con->query("insert into seller(seller_user_name,seller_email,password) values('$s_u','$s_e','$s_p');"))===True){
+  if(($con->query("insert into seller(seller_user_name,seller_email,seller_password) values('$s_u','$s_e','$s_p');"))===True){
      //echo "YES";
       header("Location:../login/login_seller.php");
       die();
