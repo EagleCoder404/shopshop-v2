@@ -112,7 +112,7 @@
     foreach($sub as $s)
       $sub_cat_id[]=$s['sub_cat_id'];
     //print_r($sub_name);
-    print_r($sub_cat_id);
+    //print_r($sub_cat_id);
      
   ?>
  
