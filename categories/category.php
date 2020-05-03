@@ -103,7 +103,7 @@
     
     print_r($sub_name);
       
-    
+    $n = count($sub_name);
   ?>
  
  
