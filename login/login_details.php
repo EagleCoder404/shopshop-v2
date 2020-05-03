@@ -30,19 +30,19 @@ function check_passwordu($user_name,$password)
 
 
 //check for seller
-function check_passwords($user_name,$password)
+function check_passwords($seller_user_name,$seller_password)
 {
     
   $con = getCon();
     
-  $user = $con->query("select * from seller where seller_user_name='$user_name';");
+  $user = $con->query("select * from seller where seller_user_name='$seller_user_name';");
   $res = $user->fetch_assoc();
   
   echo var_dump($res)."<br>";
   
   $password_hash=$res['seller_password'];
     
-  if(password_verify($password,$password_hash)){
+  if(password_verify($seller_password,$password_hash)){
     echo "password verified<br>";
     return True;
   }
