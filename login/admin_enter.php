@@ -173,7 +173,7 @@
         <input type="text" class="form-control" id="inputseller" placeholder="seller user name" name="seller_user_name" required>
     </div>
     <div class="form-group">
-        <label for="inputcolor">product description</label>
+        <label for="inputcolor">Color</label>
         <input type="text" class="form-control" id="inputcolor" placeholder="color" name="color" required>
     </div>
     <div class="form-group">
