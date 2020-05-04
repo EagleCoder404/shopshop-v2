@@ -15,6 +15,22 @@
         $res = $con->query("select * from sub_categories");
         while($ele = $res->fetch_assoc())
             $sub_category[]=$ele;
+
+
+
+        
+        $products=Array();
+        $res = $con->query("select * from prducts");
+        while($ele = $res->fetch_assoc())
+            $products[]=$ele;
+
+
+
+
+        $uniq_prod=Array();
+        $res = $con->query("select * from unique_product");
+        while($ele = $res->fetch_assoc())
+            $uniq_prod[]=$ele;
         
         
 ?>
@@ -97,6 +113,7 @@
                 </div>
             </div>
         </div>
+            
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
@@ -111,6 +128,37 @@
                 </div>
             </div>
         </div>
+            
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Products</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                   <? foreach($products as $p) { ?>
+                        <p><?=$p['product_id']."=>".$p['product_name']."=>".$p['sub_cat_id']."=>".$p['product_brand']."=>".$p['product_description']."=>".$p['rating']?></p>
+                        <? } ?>
+                </div>
+            </div>
+        </div> 
+            
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Products</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                   <? foreach($uniq_prod as $p) { ?>
+                        <p><?=$p['unique_type_id']."=>".$p['product_id']."=>".$p['price']."=>".$p['quantity']."=>".$p['seller_user_name']."=>".$p['color']."=>".$p['size']?></p>
+                        <? } ?>
+                </div>
+            </div>
+        </div>        
+            
         
     </div>
 </div>
