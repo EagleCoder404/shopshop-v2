@@ -122,9 +122,9 @@
     $min_price=array();
     for($i=0;$i<n;$i++)
     {
-      $res1 = $con->query("select min(price) as mini from unique_product where product_id= '$prod_id[$i]'");
+      $res1 = $con->query("select min(price) from unique_product where product_id= '$prod_id[$i]'");
       while($ele1 = $res1->fetch_assoc())
-      $min_price[$i]=$ele1["mini"];
+      $min_price[$i]=$ele1["min(price)"];
     }
     
     
