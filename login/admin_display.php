@@ -132,10 +132,10 @@
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Products</button>
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Products</button>
                 </h2>
             </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                    <? foreach($products as $p) { ?>
                         <p><?=$p['product_id']."=>".$p['product_name']."=>".$p['sub_cat_id']."=>".$p['product_brand']."=>".$p['product_description']."=>".$p['rating']?></p>
@@ -147,10 +147,10 @@
         <div class="card">
             <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Unique Products</button>
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Products</button>
                 </h2>
             </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
                    <? foreach($uniq_prod as $p) { ?>
                         <p><?=$p['unique_type_id']."=>".$p['product_id']."=>".$p['price']."=>".$p['quantity']."=>".$p['seller_user_name']."=>".$p['color']."=>".$p['size']?></p>
