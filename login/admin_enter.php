@@ -153,6 +153,35 @@
     </form>   
     
     
+    
+    <!--Unique product-->
+    <form class="jumbotron m-4" method="POST" action="admin_verify.php">
+     <div class="form-group">
+        <label for="inputproduct_id">product id</label>
+        <input type="number" min="1" class="form-control" id="inputproduct_id" placeholder="product id" name="uniq_product_id" required>
+    </div>
+    <div class="form-group">
+        <label for="inputprice">price</label>
+        <input type="number" min="1" class="form-control" id="inputprice" placeholder="price" name="price" required>
+    </div>
+    <div class="form-group">
+        <label for="inputquantity">Quantity</label>
+        <input type="number" min="1" class="form-control" id="inputquantity" placeholder="quantity" name="quantity" required>
+    </div>
+    <div class="form-group">
+        <label for="inputseller">Seller User Name</label>
+        <input type="text" class="form-control" id="inputseller" placeholder="seller user name" name="seller_user_name" required>
+    </div>
+    <div class="form-group">
+        <label for="inputcolor">product description</label>
+        <input type="text" class="form-control" id="inputcolor" placeholder="color" name="color" required>
+    </div>
+    <div class="form-group">
+        <label for="inputsize">product rating</label>
+        <input type="text" class="form-control" id="inputsize" placeholder="for mobiles like 4GB i.e ram size else s,m etc" name="size" required>
+    </div>
+    <button type="submit" name="uniq_prod" class="btn btn-dark">Sure!</button>
+    </form>   
                                               
                                               
                                               
