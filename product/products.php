@@ -120,17 +120,14 @@
    
     //Min price array
     $min_price=array();
-    
-     $res1 = $con->query("select price from unique_product where product_id= '$prod_id[$i]'");
-       while($ele1 = $res1->fetch_assoc())
-        $min_price[]=$ele1[];
-  /*  for($i=0;$i<n;$i++)
+    for($i=0;$i<$n;$i++)
     {
-      $res1 = $con->query("select price from unique_product where product_id= '$prod_id[$i]'");
+      $res1 = $con->query("select min(price) from unique_product where product_id= '$prod_id[$i]'");
       while($ele1 = $res1->fetch_assoc())
-        $min_price[]=$ele1[];
-    }*/
+      $min_price[]=$ele1["min(price)"];
+    }
     
+    print_r($min_price);
     
  
     /*$prod_seller=array();
@@ -138,8 +135,8 @@
       $prod_seller[]=$p['seller'];
     //print_r($prod_id);*/
     
-    for($x = 0; $x < $n; $x++) {
-    echo $min_price[$x];
+    //for($x = 0; $x < $n; $x++) {
+    //echo $min_price[$x];
 }
     
   ?>
