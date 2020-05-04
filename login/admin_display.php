@@ -20,7 +20,7 @@
 
         
         $products=Array();
-        $res = $con->query("select * from prducts");
+        $res = $con->query("select * from products");
         while($ele = $res->fetch_assoc())
             $products[]=$ele;
 
