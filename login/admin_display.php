@@ -132,7 +132,7 @@
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Products</button>
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Products</button>
                 </h2>
             </div>
             <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
