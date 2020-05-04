@@ -127,17 +127,14 @@
       $min_price[]=$ele1["min(price)"];
     }
     
-    print_r($min_price);
+  //  print_r($min_price);
     
  
     /*$prod_seller=array();
     foreach($pro as $p)
       $prod_seller[]=$p['seller'];
     //print_r($prod_id);*/
-    
-    //for($x = 0; $x < $n; $x++) {
-    //echo $min_price[$x];
-    //}
+
     
   ?>
   
