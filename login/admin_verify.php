@@ -67,6 +67,26 @@
                 echo $con->error;
         }
 
+
+         if (isset($_POST['uniq_prod'])) {
+                $con = getCon();
+                $product_id = $_POST['uniq_product_id'];
+                $price = $_POST['price'];
+                $quantity = $_POST['quantity'];
+                $seller_user_name = $_POST['seller_user_name'];
+                $color = $_POST['color'];
+                $size = $_POST['size'];
+        //$con->query("insert into product values('$product_id','$product_id', and so on)");
+        
+        if(($con->query("insert into unique_product(product_id,price,quantity,seller_user_name,color,size) values('".mysqli_real_escape_string($con,$product_id)."','".mysqli_real_escape_string($con,$price)."','".mysqli_real_escape_string($con,$quantity)."','".mysqli_real_escape_string($con,$seller_user_name)."','".mysqli_real_escape_string($con,$color)."','".mysqli_real_escape_string($con,$size)."')"))===True){
+                //echo "YES";
+                header("Location:admin_display.php");
+                die();
+        }
+        else
+                echo $con->error;
+        }
+
         
         
 ?>
