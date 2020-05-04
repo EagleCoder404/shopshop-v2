@@ -147,7 +147,7 @@
     </div>
     <div class="form-group">
         <label for="inputproduct_rating">product rating</label>
-        <input type="number" min="1" max="5" class="form-control" id="inputproduct_rating" placeholder="product rating" name="product_rating" required>
+        <input type="number" min="1" max="5" step="any" class="form-control" id="inputproduct_rating" placeholder="product rating" name="product_rating" required>
     </div>
     <button type="submit" name="products" class="btn btn-dark">Sure!</button>
     </form>   
