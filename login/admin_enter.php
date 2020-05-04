@@ -177,7 +177,7 @@
         <input type="text" class="form-control" id="inputcolor" placeholder="color" name="color" required>
     </div>
     <div class="form-group">
-        <label for="inputsize">product rating</label>
+        <label for="inputsize">size</label>
         <input type="text" class="form-control" id="inputsize" placeholder="for mobiles like 4GB i.e ram size else s,m etc" name="size" required>
     </div>
     <button type="submit" name="uniq_prod" class="btn btn-dark">Sure!</button>
