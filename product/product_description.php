@@ -117,29 +117,24 @@
   
   
   
-    <div class="container">
-  <div class="row p-2">
-   <div class="col-md-3">
-     <!--<a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>-->
-      <figure class="figure">
-        <!--<a href='../product/product_description.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>'>-->
-          <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
-        <!--</a>-->
-        <figcaption class="figure-caption text-center">
-          <h5><?=$prod_name[$c-1]?>    <?php if(isset($_SESSION['user_name'])) {
-                  echo '<a href="#"><i class="fa fa-heart-o"></i></a></h5>';  }?>
-         <!--  <h5>Price : <?=$prod_price[$c-1]?>&nbsp;&nbsp;</h5>  -->
-          <h5>Rating : <?=$prod_rating[$c-1]?>&nbsp;&nbsp;</h5>
-           <h5>Price : <?=$min_price[$c-1]?>&nbsp;&nbsp;</h5> 
-            <!--<p></p>-->
-          <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>
-          <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
-           </figcaption>
-      </figure>
-       <!--</a>-->
+    <div class="bs-example">
+    <div class="card" style="max-width: 500px;">
+        <div class="row no-gutters">
+            <div class="col-md-5" style="background: #868e96;">
+                <img src="../black.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <h5 class="card-title"><?=$product_name;?></h5>
+                    <p class="card-text"></p>
+                    <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
+                </div>
+            </div>
+        </div>
     </div>
-      </div> 
-     </div>
+</div>
+</body>
+</html>                            
   
   
   
