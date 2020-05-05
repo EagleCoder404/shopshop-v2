@@ -106,6 +106,13 @@
     //echo "<br>";
    //print_r($product);
     
+    $desc=array();
+    $pro=$con->query("select * from unique_product where product_id='$product_id'");
+    while($ans = $pro->fetch_assoc())
+      $desc[]=$ans;
+
+    print_r($desc);
+  
   
   ?>
 <div class="jumbotron">
