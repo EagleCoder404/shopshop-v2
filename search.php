@@ -5,7 +5,7 @@
                 $con = getCon();
                 $search_prod = $_POST['search_product'];
                 
-                $res = $con->query("select * from products where product_description like 'test%'");
+                $res = $con->query("select * from products where product_description like 'test'");
 
                 $pro = Array();
                 while($ele = $res->fetch_assoc())
