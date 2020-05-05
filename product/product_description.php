@@ -121,6 +121,9 @@
       $description[]=$d['product_description'];
   
     $n=count($description);
+  
+    print_r($description);
+    echo "<br>";
     print_r($desc);
     echo "<br>";
     print_r($types);
