@@ -2,7 +2,6 @@
   session_start();
   include '../libraries/chocolates.php';
   $search_prod = $_GET['search_product'];
-  echo $search_prod;
 ?>
 
 <!--HTML boiler plate-->
@@ -67,7 +66,7 @@
   
   
   <!--Search bar-->
-<div class="jumbotron jumbotron-fluid">
+<!--<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <form>
       <div class="text-center">
@@ -76,7 +75,7 @@
       </div>
     </form>
   </div>
-</div>
+</div>-->
   
   
   
