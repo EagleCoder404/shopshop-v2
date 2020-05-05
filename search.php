@@ -86,7 +86,7 @@
     $con = getCon();
   
      $search_prod = mysqli_real_escape_string($con,$_GET['search_product']);
-    $res = $con->query("select * from products where product_description like '%$search_prod%'");
+    $res = $con->query("select * from products where product_name like '%$search_prod%' or product_brand like '%$search_prod%' or product_description like '%$search_prod%'");
     
     $pro = Array();
     while($ele = $res->fetch_assoc())
