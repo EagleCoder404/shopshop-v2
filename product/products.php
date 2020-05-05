@@ -155,13 +155,14 @@
           <img src="/black.png" class="figure-img img-fluid rounded" alt="product">
         </a>
         <figcaption class="figure-caption text-center">
-          <h5><?=$prod_name[$c-1]?>    <?php if(isset($_SESSION['user_name'])) {
-                  echo '<a href="#"><i class="fa fa-heart-o"></i></a></h5>';  }?>
+          <h5><?=$prod_name[$c-1]?>    <?php/* if(isset($_SESSION['user_name'])) {
+                  echo '<a href="#"><i class="fa fa-heart-o"></i></a></h5>';  }*/?>
          <!--  <h5>Price : <?=$prod_price[$c-1]?>&nbsp;&nbsp;</h5>  -->
           <h5>Rating : <?=$prod_rating[$c-1]?>&nbsp;&nbsp;</h5>
            <h5>Price : <?=$min_price[$c-1]?>&nbsp;&nbsp;</h5> 
             <!--<p></p>-->
-          <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>
+          <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a><br>
+          <a href='#' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
           <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
            </figcaption>
       </figure>
