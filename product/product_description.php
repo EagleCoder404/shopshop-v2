@@ -114,9 +114,11 @@
   
     $color=array();
     $size=array();
+    $seller=array();
     foreach($types as $ty){
       $color[]=$ty['color'];
       $size[]=$ty['size'];
+      $seller[]=$ty['seller_user_name'];
     }  
     $c=count($color);
     $s=count($size);
@@ -133,8 +135,6 @@
       $description[]=$d['product_description'];
       $rating[]=$d['rating'];
       $brand[]=$d['product_brand'];
-      $color[]=$d['color'];
-      $size[]=$d['size'];
     }
     
   
@@ -145,7 +145,8 @@
     print_r($desc);
     echo "<br>";
     print_r($types);
-  
+    echo "<br>";
+    print_r($seller);
     /*print_r($color);
     echo "<br>";
     print_r($size);*/
