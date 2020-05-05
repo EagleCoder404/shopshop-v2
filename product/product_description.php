@@ -131,7 +131,7 @@
   
   
  <div class="product">
-  <? foreach($types as $t) ?>
+  <? foreach($types as $t) { ?>
     <div class="card m-4" style="max-width: 100%;">
         <div class="row no-gutters">
             <div class="col-md-5" style="height:400px; background: #868e96;">
