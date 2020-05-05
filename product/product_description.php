@@ -167,7 +167,8 @@
                       </div>
                     </div>
                   <? } ?>
-                    <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
+                    <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>
+                    <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Add to cart</a>
                 </div>
             </div>
         </div>
