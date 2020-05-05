@@ -119,20 +119,28 @@
     $rating=array();
     $brand=array();
     $desciption=array();
+    $color=array();
+    $size=array();
     foreach($desc as $d){
       $description[]=$d['product_description'];
       $rating[]=$d['rating'];
       $brand[]=$d['product_brand'];
+      $color[]=$d['color'];
+      $size[]=$d['size'];
     }
     
   
     $n=count($description);
   
-    print_r($description);
+    /*print_r($description);
     echo "<br>";
     print_r($desc);
     echo "<br>";
-    print_r($types);
+    print_r($types);*/
+  
+    print_r($color);
+    echo "<br>";
+    print_r($size);
   
     
   
