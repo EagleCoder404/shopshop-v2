@@ -71,9 +71,9 @@
   <!--Search bar-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <form  method="GET" action="search.php">
+    <form>
       <div class="text-center">
-            <input type="text" class="form-control mr-sm-2" placeholder="Search" name="search_product" required><br>
+            <input type="text" class="form-control mr-sm-2" placeholder="Search"><br>
             <button type="submit" class="btn btn-outline-dark my-sm-0">Search</button>
       </div>
     </form>
@@ -163,12 +163,21 @@
                   <form method="POST" action="product_buy.php">
                       <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Prop</label>
-                        <select class="custom-select mr-sm-2" name="value">
-                          <option selected>prop</option>
-                          <option value="1"></option>
-                          <option value="2"></option>
-                          <option value="3"></option>
+                        
+                        <?  ?>
+                        <select class="custom-select mr-sm-2" name="color">
+                          <option selected>color</option>
+                          <option value="<?  ?>"></option>
                         </select>
+                        <?  ?>
+                        <br>
+                        <?  ?>
+                        <select class="custom-select mr-sm-2" name="size">
+                          <option selected>size</option>
+                          <option value="<?  ?>"></option>
+                        </select>
+                        <?  ?>
+                        
                       </div>
                   </form>
                   
