@@ -1,7 +1,6 @@
 <?php
   session_start();
   include 'libraries/chocolates.php';
-  $search_prod = $_GET['search_product'];
 ?>
 
 <!--HTML boiler plate-->
@@ -85,7 +84,9 @@
     
     
     $con = getCon();
-    $res = $con->query("select * from products where product_description like '$$search_prod%'");
+  
+     $search_prod = mysql_real_escape_string($con,$_GET['search_product']);
+    $res = $con->query("select * from products where product_description like '%$search_prod%'");
     
     $pro = Array();
     while($ele = $res->fetch_assoc())
