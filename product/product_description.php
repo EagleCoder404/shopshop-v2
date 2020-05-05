@@ -180,19 +180,23 @@
                       <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Prop</label>
                         
-                        <? for($i=0;$i<$c;$i++) { ?>
+                        
                         <select class="custom-select mr-sm-2" name="color">
                           <option selected>color</option>
+                          <? for($i=0;$i<$c;$i++) { ?>
                           <option value="<?=$color[$i]?>"></option>
+                          <? } ?>
                         </select>
-                        <? } ?>
+                        
                         <br><br>
-                        <? for($i=0;$i<$s;$i++) { ?>
+                        
                         <select class="custom-select mr-sm-2" name="size">
                           <option selected>size</option>
+                          <? for($i=0;$i<$s;$i++) { ?>
                           <option value="<?=$size[$i]?>"></option>
+                          <? } ?>
                         </select>
-                        <? } ?>
+                        
                         
                       </div>
                   </form>
