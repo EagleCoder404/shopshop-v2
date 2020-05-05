@@ -119,7 +119,7 @@
       $min_price[]=$ele1["min(price)"];
     }
     print_r($prod_name);
-  echo "not working";
+  echo $search_prod;
   ?>
   
   
