@@ -149,9 +149,9 @@
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
-                    <? for($i=0;$i<$n;$i++) { ?>
-                    <p class="card-text"><?=$d[$i];?></p>
-                    <? } ?>
+                    
+                    <p class="card-text"><?=$d[0];?></p>
+                   
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
