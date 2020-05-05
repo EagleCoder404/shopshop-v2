@@ -170,7 +170,7 @@
                           <option value="<?  ?>"></option>
                         </select>
                         <?  ?>
-                        <br>
+                        <br><br>
                         <?  ?>
                         <select class="custom-select mr-sm-2" name="size">
                           <option selected>size</option>
