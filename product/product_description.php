@@ -106,13 +106,19 @@
     //echo "<br>";
    //print_r($product);
     
+    $types=array();
     $desc=array();
     $pro=$con->query("select * from unique_product where product_id='$product_id'");
     while($ans = $pro->fetch_assoc())
-      $desc[]=$ans;
+      $types[]=$ans;
 
-    print_r($desc);
+    $pro=$con->query("select * from products where product_id='$product_id'");
+    while($ans = $pro->fetch_assoc())
+      $desc[]=$ans;
   
+    print_r($types);
+  
+    
   
   ?>
 <div class="jumbotron">
@@ -124,7 +130,8 @@
   
   
   
-    <div class="bs-example">
+ <div class="product">
+  <? foreach($types as $t) ?>
     <div class="card m-4" style="max-width: 100%;">
         <div class="row no-gutters">
             <div class="col-md-5" style="height:400px; background: #868e96;">
@@ -133,13 +140,19 @@
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
-                    <p class="card-text"></p>
+                    <p class="card-text"><?=$t['price']?></p>
+                  <p class="card-text"><?=$t['size']?></p>
+                  <p class="card-text"><?=$t['quantity']?></p>
+                  <p class="card-text"><?=$t['seller_user_name']?></p>
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
         </div>
     </div>
+  <? } ?>
 </div>
+  
+  
 </body>
 </html>                            
   
