@@ -158,7 +158,7 @@
                     <p class="card-text">Description : <?=$description[0];?></p>
                     <p class="card-text">Rating : <?=$rating[0];?></p>
                     <p class="card-text">Brand : <?=$brand[0];?></p>
-                    <? foreach($types as $t) ?>
+                    <? foreach($types as $t) { ?>
                     <div class="card">
                       <div class="card-body">
                         <p>$t['price']</p>
