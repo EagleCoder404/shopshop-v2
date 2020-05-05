@@ -85,7 +85,7 @@
     
     
     $con = getCon();
-    $res = $con->query("select * from products");
+    $res = $con->query("select * from products where product_description like 'testcase2'");
     
     $pro = Array();
     while($ele = $res->fetch_assoc())
