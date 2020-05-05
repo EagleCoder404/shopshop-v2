@@ -150,7 +150,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
                     
-                    <p class="card-text"><?=$d[0];?></p>
+                    <p class="card-text"><?=$description[0];?></p>
                    
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
