@@ -147,7 +147,7 @@
         <div class="card">
             <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Products</button>
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Unique Products</button>
                 </h2>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
