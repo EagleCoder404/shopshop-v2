@@ -108,7 +108,7 @@
     
     $prod_description=array();
     foreach($pro as $p)
-      $prod_description[]=$p['description'];
+      $prod_description[]=$p['product_description'];
    
     //Min price array
     $min_price=array();
