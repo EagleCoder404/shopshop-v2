@@ -140,10 +140,8 @@
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
-                    <p class="card-text"><?=$t['price']?></p>
-                  <p class="card-text"><?=$t['size']?></p>
-                  <p class="card-text"><?=$t['quantity']?></p>
-                  <p class="card-text"><?=$t['seller_user_name']?></p>
+                    <p class="card-text"><?=$desc[]?></p>
+                  
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
