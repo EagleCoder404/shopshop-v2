@@ -33,27 +33,27 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="../index.php" class="navbar-brand">ShopShop</a>
+    <a href="index.php" class="navbar-brand">ShopShop</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-            <a href="../index.php" class="nav-item nav-link active">Home</a>
-            <a href="../about.php" class="nav-item nav-link">About</a>
+            <a href="index.php" class="nav-item nav-link active">Home</a>
+            <a href="about.php" class="nav-item nav-link">About</a>
             <a href="#" class="nav-item nav-link">Products</a>
         </div>
          <div class="navbar-nav ml-auto">
             <!--<a href="register/register.php" class="nav-item nav-link">Register</a>
             <a href="login/login.php" class="nav-item nav-link">Login</a>&nbsp;&nbsp;-->
             <?php if(isset($_SESSION['user_name'])) {
-                    echo '<a href="../profile.php" class="nav-item nav-link active"><i class="fa fa-user-o">  '.$_SESSION['user_name'].'</i></a>';
-                    echo '<a href="../login/logout.php" class="nav-item nav-link">Logout</a>';
+                    echo '<a href="profile.php" class="nav-item nav-link active"><i class="fa fa-user-o">  '.$_SESSION['user_name'].'</i></a>';
+                    echo '<a href="login/logout.php" class="nav-item nav-link">Logout</a>';
                 }
                 else{
-                    echo '<a href="../register/register.php" class="nav-item nav-link">Register</a>
-                            <a href="../login/login.php" class="nav-item nav-link">Login</a>&nbsp;&nbsp;';
+                    echo '<a href="register/register.php" class="nav-item nav-link">Register</a>
+                            <a href="login/login.php" class="nav-item nav-link">Login</a>&nbsp;&nbsp;';
                 }
             ?>
         </div>
@@ -81,7 +81,16 @@
   
   
   <?php
-  echo $search_prod;
+    
+    $prod = Array();
+    $con = getCon();
+    $sol = $con->query("select * from products");
+    while($e = $sol->fetch_assoc())
+      $prod[]=$e;
+    
+    print_r($prod);
+    
+    /*echo $search_prod;
     $con = getCon();
     $res = $con->query("select * from products");
     echo "bp1";
@@ -119,7 +128,7 @@
       $min_price[]=$ele1["min(price)"];
     }
     print_r($prod_name);
-  echo $search_prod;
+  echo $search_prod;*/
   ?>
   
   
