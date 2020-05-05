@@ -38,6 +38,7 @@
                   $res1 = $con->query("select min(price) from unique_product where product_id= '$prod_id[$i]'");
                   while($ele1 = $res1->fetch_assoc())
                   $min_price[]=$ele1["min(price)"];
+                }        
 ?>
 
 
