@@ -11,7 +11,7 @@
   {
       if($con->query("insert into wishlist(user_name,product_id) values('$user','$product_id')")===True)
       {
-        header(Location:'product_description.php');
+        header("Location:product_description.php");
         die();
       }
       else
