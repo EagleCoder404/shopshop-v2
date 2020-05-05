@@ -72,7 +72,7 @@
   <!--Search bar-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <form  method="get" action="search.php">
+    <form  method="GET" action="search.php">
       <div class="text-center">
             <input type="text" class="form-control mr-sm-2" placeholder="Search" name="search_product"><br>
             <button type="submit" class="btn btn-outline-dark my-sm-0">Search</button>
