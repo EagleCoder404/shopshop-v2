@@ -5,7 +5,7 @@
                 $con = getCon();
                 $search_prod = $_POST['search_product'];
                 
-                $res = $con->query("select * from products where product_description like '%$search_prod%'");
+                $res = $con->query("select * from products where product_description like '$search_prod%'");
 
                 $pro = Array();
                 while($ele = $res->fetch_assoc())
@@ -40,8 +40,6 @@
                   while($ele1 = $res1->fetch_assoc())
                   $min_price[]=$ele1["min(price)"];
                 }
-
-                die();
         }
         else
                 echo $con->error;
