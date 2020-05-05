@@ -85,7 +85,7 @@
     
     $con = getCon();
   
-     $search_prod = mysql_real_escape_string($con,$_GET['search_product']);
+     $search_prod = mysqli_real_escape_string($con,$_GET['search_product']);
     $res = $con->query("select * from products where product_description like '%$search_prod%'");
     
     $pro = Array();
