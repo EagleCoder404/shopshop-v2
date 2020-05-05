@@ -118,7 +118,7 @@
   
   
     <div class="bs-example">
-    <div class="card" style="max-width: 500px;">
+    <div class="card m-4" style="max-width: 100%;">
         <div class="row no-gutters">
             <div class="col-md-5" style="background: #868e96;">
                 <img src="../black.png" class="card-img-top h-100" alt="...">
