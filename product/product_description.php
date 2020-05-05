@@ -118,7 +118,7 @@
   
     $desciption=array();
     foreach($desc as $d)
-      $description[]=$d['description'];
+      $description[]=$d['product_description'];
   
     $n=count($description);
     print_r($desc);
