@@ -140,15 +140,15 @@
   
     $n=count($description);
   
-    /*print_r($description);
+    print_r($description);
     echo "<br>";
     print_r($desc);
     echo "<br>";
-    print_r($types);*/
+    print_r($types);
   
-    print_r($color);
+    /*print_r($color);
     echo "<br>";
-    print_r($size);
+    print_r($size);*/
   
     
   
@@ -174,7 +174,6 @@
                     <p class="card-text">Description : <?=$description[0];?></p>
                     <p class="card-text">Rating : <?=$rating[0];?></p>
                     <p class="card-text">Brand : <?=$brand[0];?></p>
-                   
                   
                   <form method="POST" action="product_buy.php">
                       <div class="col-auto my-1">
