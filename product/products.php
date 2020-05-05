@@ -82,7 +82,7 @@
   
 <div class="jumbotron">
   <div class="text-center">
-    <?="cat_id : ".$cat_id."<br>"."cat_name : ".$cat_name?>
+    <?="sub_cat_id : ".$sub_cat_id."<br>"."sub_cat_name : ".$sub_cat_name?>
   </div>
   </div>
  
