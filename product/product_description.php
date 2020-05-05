@@ -158,21 +158,20 @@
                     <p class="card-text">Description : <?=$description[0];?></p>
                     <p class="card-text">Rating : <?=$rating[0];?></p>
                     <p class="card-text">Brand : <?=$brand[0];?></p>
-                    
+                   
+                  
                   <form method="POST" action="product_buy.php">
-                    <? for($i=0;$i<4;$i++) { ?>
                       <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Prop</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                        <select class="custom-select mr-sm-2" name="value">
+                          <option selected>color</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                          <option value="3"></option>
                         </select>
                       </div>
-                    <? } ?>
                   </form>
-                    
+                  
                     <br>
                     <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>
                     <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Add to cart</a>
