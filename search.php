@@ -82,12 +82,6 @@
   
   <?php
     
-    $prod = Array();
-    $con = getCon();
-    $sol = $con->query("select * from products");
-    while($e = $sol->fetch_assoc())
-      $prod[]=$e;
-    
     
     
     $con = getCon();
