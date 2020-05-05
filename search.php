@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include '../libraries/chocolates.php';
+  include 'libraries/chocolates.php';
   $search_prod = $_GET['search_product'];
 ?>
 
