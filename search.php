@@ -118,7 +118,7 @@
       while($ele1 = $res1->fetch_assoc())
       $min_price[]=$ele1["min(price)"];
     }
-    
+    print_r($prod_name);
   ?>
   
   
