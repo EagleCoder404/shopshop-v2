@@ -161,10 +161,7 @@
                     <? foreach($types as $t) { ?>
                     <div class="card">
                       <div class="card-body">
-                        <p>$t['price']</p>
-                        <p>$t['size']</p>
-                        <p>$t['seller_user_name']</p>
-                        <p>$t['color']</p>
+                        <a href="#"><p><?=$t['price']." | ".$t['size']." | ".$t['seller_user_name']." | ".$t['color']?></p></a>
                       </div>
                     </div>
                   <? } ?>
