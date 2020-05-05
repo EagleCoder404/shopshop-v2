@@ -112,6 +112,8 @@
     while($ans = $pro->fetch_assoc())
       $types[]=$ans;
   
+    $color=array();
+    $size=array();
     foreach($types as $ty){
       $color[]=$ty['color'];
       $size[]=$ty['size'];
@@ -126,8 +128,6 @@
     $rating=array();
     $brand=array();
     $desciption=array();
-    $color=array();
-    $size=array();
     foreach($desc as $d){
       $description[]=$d['product_description'];
       $rating[]=$d['rating'];
