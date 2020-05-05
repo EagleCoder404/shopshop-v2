@@ -111,6 +111,13 @@
     $pro=$con->query("select * from unique_product where product_id='$product_id'");
     while($ans = $pro->fetch_assoc())
       $types[]=$ans;
+  
+    foreach($types as $ty){
+      $color[]=$ty['color'];
+      $size[]=$ty['size'];
+    }  
+  
+  
 
     $pro=$con->query("select * from products where product_id='$product_id'");
     while($ans = $pro->fetch_assoc())
