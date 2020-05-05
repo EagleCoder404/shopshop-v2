@@ -1,46 +1,8 @@
 <?php
-        session_start();
-        
-                $con = getCon();
-                $search_prod = $_GET['search_product'];
-                
-                $res = $con->query("select * from products where product_description like 'test'");
-
-                $pro = Array();
-                while($ele = $res->fetch_assoc())
-                  $pro[]=$ele;
-
-                $prod_id=array();
-                foreach($pro as $p)
-                  $prod_id[]=$p['product_id'];
-                  $n=count($prod_id);
-
-                $prod_name=array();
-                foreach($pro as $p)
-                  $prod_name[]=$p['product_name'];
-
-                $prod_price=array();
-                foreach($pro as $p)
-                  $prod_price[]=$p['product_price'];
-
-                $prod_rating=array();
-                foreach($pro as $p)
-                  $prod_rating[]=$p['rating'];
-
-                $prod_description=array();
-                foreach($pro as $p)
-                  $prod_description[]=$p['description'];
-
-                //Min price array
-                $min_price=array();
-                for($i=0;$i<$n;$i++)
-                {
-                  $res1 = $con->query("select min(price) from unique_product where product_id= '$prod_id[$i]'");
-                  while($ele1 = $res1->fetch_assoc())
-                  $min_price[]=$ele1["min(price)"];
-                }        
+  session_start();
+  include '../libraries/chocolates.php';
+  $search_prod = $_GET['search_product']; 
 ?>
-
 
 <!--HTML boiler plate-->
 <!DOCTYPE html>
@@ -115,9 +77,53 @@
   </div>
 </div>
   
-        
-        
-        
+  
+  
+  
+  <?php
+  echo $search_prod;
+    $con = getCon();
+    $res = $con->query("select * from products");
+    
+    $pro = Array();
+    while($ele = $res->fetch_assoc())
+      $pro[]=$ele;
+   
+    $prod_id=array();
+    foreach($pro as $p)
+      $prod_id[]=$p['product_id'];
+      $n=count($prod_id);
+    
+    $prod_name=array();
+    foreach($pro as $p)
+      $prod_name[]=$p['product_name'];
+    
+    $prod_price=array();
+    foreach($pro as $p)
+      $prod_price[]=$p['product_price'];
+    
+    $prod_rating=array();
+    foreach($pro as $p)
+      $prod_rating[]=$p['rating'];
+    
+    $prod_description=array();
+    foreach($pro as $p)
+      $prod_description[]=$p['description'];
+   
+    //Min price array
+    $min_price=array();
+    for($i=0;$i<$n;$i++)
+    {
+      $res1 = $con->query("select min(price) from unique_product where product_id= '$prod_id[$i]'");
+      while($ele1 = $res1->fetch_assoc())
+      $min_price[]=$ele1["min(price)"];
+    }
+    
+  ?>
+  
+  
+ 
+   <!--code from index.php card decks logic added-->
     <?$c=1; $lim=$n/4+1; for($j=1;$j<=$lim;$j++){ ?>
     <div class="container">
   <div class="row p-2">
@@ -146,6 +152,10 @@
       </div> 
      </div>
     <? } ?>
+
+  
+            
+            
 </body>
     
  <!--footer-->
