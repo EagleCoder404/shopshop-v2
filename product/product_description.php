@@ -158,6 +158,11 @@
                     <p class="card-text">Description : <?=$description[0];?></p>
                     <p class="card-text">Rating : <?=$rating[0];?></p>
                     <p class="card-text">Brand : <?=$brand[0];?></p>
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Test</p>
+                      </div>
+                    </div>
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
