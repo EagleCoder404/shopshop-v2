@@ -74,8 +74,8 @@
   <div class="container">
     <form  method="POST" action="search.php">
       <div class="text-center">
-            <input type="text" class="form-control mr-sm-2" placeholder="Search"><br>
-            <button type="submit" name="search" class="btn btn-outline-dark my-sm-0">Search</button>
+            <input type="text" class="form-control mr-sm-2" placeholder="Search" name="search_product"><br>
+            <button type="submit" name="search_results" class="btn btn-outline-dark my-sm-0">Search</button>
       </div>
     </form>
   </div>
