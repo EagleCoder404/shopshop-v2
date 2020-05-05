@@ -155,9 +155,9 @@
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
-                    <p class="card-text"><?=$description[0];?></p>
-                    <p class="card-text"><?=$rating[0];?></p>
-                    <p class="card-text"><?=$brand[0];?></p>
+                    <p class="card-text">Description : <?=$description[0];?></p>
+                    <p class="card-text">Rating : <?=$rating[0];?></p>
+                    <p class="card-text">Brand : <?=$brand[0];?></p>
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
