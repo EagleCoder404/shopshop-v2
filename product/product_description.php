@@ -116,9 +116,15 @@
     while($ans = $pro->fetch_assoc())
       $desc[]=$ans;
   
+    $rating=array();
+    $brand=array();
     $desciption=array();
-    foreach($desc as $d)
+    foreach($desc as $d){
       $description[]=$d['product_description'];
+      $rating[]=$d['rating'];
+      $brand[]=$d['product_brand'];
+    }
+    
   
     $n=count($description);
   
@@ -149,9 +155,9 @@
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
-                    
                     <p class="card-text"><?=$description[0];?></p>
-                   
+                    <p class="card-text"><?=$rating[0];?></p>
+                    <p class="card-text"><?=$brand[0];?></p>
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
