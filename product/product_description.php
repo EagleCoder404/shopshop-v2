@@ -160,8 +160,10 @@
                     <p class="card-text">Brand : <?=$brand[0];?></p>
                     <? foreach($types as $t) { ?>
                     <div class="card">
-                      <div class="card-body">
-                        <a href="#"><p><?=$t['price']." | ".$t['size']." | ".$t['seller_user_name']." | ".$t['color']?></p></a>
+                      <div class="text-center">
+                        <div class="card-body p-2">
+                          <a href="#"><p><?=$t['price']." | ".$t['size']." | ".$t['seller_user_name']." | ".$t['color']?></p></a>
+                        </div>
                       </div>
                     </div>
                   <? } ?>
