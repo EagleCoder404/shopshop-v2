@@ -2,7 +2,8 @@
   
   session_start();
   include '../libraries/chocolates.php';
-  
+  $con = getCon();  
+
   $product_id=$_GET['product_id'];
   $user=$_SESSION['user_name'];
   
