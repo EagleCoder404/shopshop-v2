@@ -202,9 +202,9 @@
                   </form>
                   
                     <br>
-                    <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Buy</a>&nbsp;&nbsp;
-                    <a href='../product/product_buy.php?product_id=<?=$prod_id[$c-1]?>&&product_name=<?=$prod_name[$c-1]?>' class="btn btn-dark mb-4 text-center" role="button">Add to cart</a>&nbsp;&nbsp;
-                    <a href='#' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
+                    <a href='product_buy.php' class="btn btn-dark mb-4 text-center" role="button">Buy</a>&nbsp;&nbsp;
+                    <a href='#' class="btn btn-dark mb-4 text-center" role="button">Add to cart</a>&nbsp;&nbsp;
+                    <a href='wishlist.php' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
                 </div>
             </div>
         </div>
