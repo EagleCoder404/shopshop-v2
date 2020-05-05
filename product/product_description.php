@@ -116,6 +116,8 @@
     while($ans = $pro->fetch_assoc())
       $desc[]=$ans;
   
+    print_r($desc);
+    echo "<br>";
     print_r($types);
   
     
@@ -131,7 +133,6 @@
   
   
  <div class="product">
-  <? foreach($types as $t) { ?>
     <div class="card m-4" style="max-width: 100%;">
         <div class="row no-gutters">
             <div class="col-md-5" style="height:400px; background: #868e96;">
@@ -140,14 +141,13 @@
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title"><?=$product_name;?></h5>
-                    <p class="card-text"><?=$desc[]?></p>
-                  
+                    <p class="card-text"></p>
+                    
                     <!--<a href="#" class="btn btn-primary stretched-link">View Profile</a>-->
                 </div>
             </div>
         </div>
     </div>
-  <? } ?>
 </div>
   
   
