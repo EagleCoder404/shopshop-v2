@@ -84,32 +84,32 @@
   echo $search_prod;
     $con = getCon();
     $res = $con->query("select * from products");
-    
+    echo "bp1";
     $pro = Array();
     while($ele = $res->fetch_assoc())
       $pro[]=$ele;
-   
+    echo "bp2";
     $prod_id=array();
     foreach($pro as $p)
       $prod_id[]=$p['product_id'];
       $n=count($prod_id);
-    
+    echo "bp3";
     $prod_name=array();
     foreach($pro as $p)
       $prod_name[]=$p['product_name'];
-    
+    echo "bp4";
     $prod_price=array();
     foreach($pro as $p)
       $prod_price[]=$p['product_price'];
-    
+    echo "bp5";
     $prod_rating=array();
     foreach($pro as $p)
       $prod_rating[]=$p['rating'];
-    
+    echo "bp6";
     $prod_description=array();
     foreach($pro as $p)
       $prod_description[]=$p['product_description'];
-   
+   echo "bp7";
     //Min price array
     $min_price=array();
     for($i=0;$i<$n;$i++)
