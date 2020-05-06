@@ -20,7 +20,7 @@
   //checking if query is valid if yes then yes else respective error will be displayed
   if(($con->query("insert into user(user_name,email,password) values('$u','$e','$p');"))===True){
      //echo "YES";
-      header("Location:../login/login_seller.php");
+      header("Location:../login/login.php");
       die();
   }
   else
