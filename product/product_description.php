@@ -47,7 +47,7 @@
             <a href="../about.php" class="nav-item nav-link">About</a>
             <a href="#" class="nav-item nav-link active">Products</a>
         </div>
-         <div class="navbar-nav ml-auto">
+         <div class="navbar-nav mwishlist.phpl-auto">
             <!--<a href="register/register.php" class="nav-item nav-link">Register</a>
             <a href="login/login.php" class="nav-item nav-link">Login</a>&nbsp;&nbsp;-->
             <?php if(isset($_SESSION['user_name'])) {
@@ -204,9 +204,8 @@
                     <br>
                     <a href='product_buy.php' class="btn btn-dark mb-4 text-center" role="button">Buy</a>&nbsp;&nbsp;
                     <a href='#' class="btn btn-dark mb-4 text-center" role="button">Add to cart</a>&nbsp;&nbsp;
-                    <!--<a href='wishlist.php?product_id=<?=$product_id?>&&product_name=<?=$product_name?>' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>-->
-                    <a href='php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
-                </div>
+                    <a href='wishlist.php?product_id=<?=$product_id?>&&product_name=<?=$product_name?>' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
+                    </div>
             </div>
         </div>
     </div>
