@@ -156,7 +156,7 @@
   ?>
 <div class="jumbotron">
   <div class="text-center">
-    <?=$product_id."<br>".$product_name."<br>".$prod_description."<br>".$prod_seller."<br>".$prod_price;?>
+    <?=$product_id."<br>".$product_name//."<br>".$prod_description."<br>".$prod_seller."<br>".$prod_price;?>
   </div>
   </div
  
