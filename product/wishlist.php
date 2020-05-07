@@ -15,7 +15,10 @@
         die();
       }
       else
-        echo $con->error;
+      {
+        header("Location:product_description.php");
+        die();
+      }
   }
     
 ?>
