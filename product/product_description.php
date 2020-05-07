@@ -204,7 +204,8 @@
                     <br>
                     <a href='product_buy.php' class="btn btn-dark mb-4 text-center" role="button">Buy</a>&nbsp;&nbsp;
                     <a href='#' class="btn btn-dark mb-4 text-center" role="button">Add to cart</a>&nbsp;&nbsp;
-                    <a href='wishlist.php?product_id=<?=$product_id?>&&product_name=<?=$product_name?>' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
+                    <!--<a href='wishlist.php?product_id=<?=$product_id?>&&product_name=<?=$product_name?>' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>-->
+                    <a href='php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
                 </div>
             </div>
         </div>
