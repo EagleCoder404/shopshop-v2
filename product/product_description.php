@@ -182,7 +182,7 @@
                         
                         
                         <select class="custom-select mr-sm-2" name="color">
-                          <option selected>color</option>
+                          <!--<option selected>color</option>-->
                           <? for($i=0;$i<$c;$i++) { ?>
                           <option value="<?=$color[$i]?>"><?=$color[$i]?></option>
                           <? } ?>
@@ -191,7 +191,7 @@
                         <br><br>
                         
                         <select class="custom-select mr-sm-2" name="size">
-                          <option selected>size</option>
+                          <!--<option selected>size</option>-->
                           <? for($i=0;$i<$s;$i++) { ?>
                           <option value="<?=$size[$i]?>"><?=$size[$i]?></option>
                           <? } ?>
