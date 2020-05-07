@@ -18,6 +18,8 @@
       {
         header("Location:product_description.php");
         die();
+        //header("Location:product_description.php");
+        //die();
       }
   }
     
