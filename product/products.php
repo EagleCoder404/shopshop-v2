@@ -162,7 +162,7 @@
            <h5>Price : <?=$min_price[$c-1]?>&nbsp;&nbsp;</h5> 
             <!--<p></p>-->
           <a href='product_buy.php' class="btn btn-dark mb-4 text-center" role="button">Buy</a><br>
-          <a href='wishlist.php' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>
+          <!--<a href='wishlist.php' class="btn btn-dark mb-4 text-center" role="button">Wishlist</a>-->
           <!--<button type="button" class="btn btn-dark mb-4">Buy</button>-->
            </figcaption>
       </figure>
