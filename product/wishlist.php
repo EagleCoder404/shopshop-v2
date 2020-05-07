@@ -22,5 +22,10 @@
         //die();
       }
   }
+else
+{
+  header("Location:product_description.php");
+        die();
+}
     
 ?>
